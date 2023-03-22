@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: test
+  #DB
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console.enabled: true
+  banner:
+    location: classpath:/banner.txt
+server:
+  servlet:
+    context-path: /rentalcar/api
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+---

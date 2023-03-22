@@ -1,0 +1,6 @@
+## DB
+
+	Table names should be plural.
+	Entity should implement Serializable interface in order to persisted to db.
+	
+	notes for manyToMany https://www.baeldung.com/jpa-many-to-many
